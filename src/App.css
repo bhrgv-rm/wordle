@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+  font-family: Roboto Slab;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+
+
+.keyboard {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keyboard .key {
+  font-weight: 900;
+  padding: 0;
+  font-size: 18px;
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid #333;
+  color: #333;
+  border-radius: 5px;
+  background-color: #eee;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key:hover {
+  background-color: #bbb;
+}
+
+.row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.row>div {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #bbb;
+  margin: 4px;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.grid-row {
+  display: flex;
+  gap: 5px;
+}
+
+.grid-cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+
+.exact {
+  background-color: #6aaa64;
+  color: white;
+}
+
+.present {
+  background-color: #c9b458;
+  color: white;
+}
+
+.absent {
+  background-color: #545454;
+  color: white;
+}
+
+.key {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  font-size: 18px;
+  background-color: #ddd;
+}
+
+.key:hover {
+  background-color: #bbb;
+}
+
+.entered-letters {
+  margin-top: 10px;
+  font-size: 18px;
+}
